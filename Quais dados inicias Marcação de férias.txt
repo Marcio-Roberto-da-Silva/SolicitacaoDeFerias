@@ -1,0 +1,7 @@
+Crie um projeto marcação de férias.
+
+1- Quais os dados de Entrada?
+
+2- Qual o Processamento a ser realizado?
+
+3- Qual a Saída esperada? 

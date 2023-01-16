@@ -1,0 +1,11 @@
+Passar data inicio
+Passar data fim
+Retornar se e valido seguindo as regras
+Mostrando o motivo de não ser valido
+
+ 
+
+ATENÇÃO PARA AS SEGUINTES INFORMAÇÕES:
+- As férias deverão ter início de segunda à quarta;
+- O período de férias não deve ter início aos dias que antecede feriado;
+- As férias deverão ser solicitadas com 40 dias de antecedência de seu início;
