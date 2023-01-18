@@ -40,8 +40,9 @@ namespace Solicitacao_de_Ferias {
             // 
             this.txtNome.Location = new System.Drawing.Point(32, 29);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(341, 22);
+            this.txtNome.Size = new System.Drawing.Size(362, 22);
             this.txtNome.TabIndex = 0;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // btnSolicitar
             // 
@@ -55,7 +56,7 @@ namespace Solicitacao_de_Ferias {
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(161, 224);
+            this.btnLimpar.Location = new System.Drawing.Point(167, 224);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(86, 43);
             this.btnLimpar.TabIndex = 4;
@@ -65,7 +66,7 @@ namespace Solicitacao_de_Ferias {
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(288, 224);
+            this.btnSair.Location = new System.Drawing.Point(308, 224);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(86, 43);
             this.btnSair.TabIndex = 5;
@@ -105,17 +106,21 @@ namespace Solicitacao_de_Ferias {
             this.lblResultado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblResultado.Location = new System.Drawing.Point(32, 186);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(342, 19);
+            this.lblResultado.Size = new System.Drawing.Size(362, 19);
             this.lblResultado.TabIndex = 9;
             this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // dateDataInicial
             // 
             this.dateDataInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDataInicial.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dateDataInicial.Location = new System.Drawing.Point(32, 86);
+            this.dateDataInicial.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
+            this.dateDataInicial.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateDataInicial.Name = "dateDataInicial";
             this.dateDataInicial.Size = new System.Drawing.Size(200, 22);
             this.dateDataInicial.TabIndex = 10;
+            this.dateDataInicial.Value = new System.DateTime(2023, 1, 18, 0, 0, 0, 0);
             this.dateDataInicial.ValueChanged += new System.EventHandler(this.dateDataInicial_ValueChanged);
             // 
             // dateDataFinal
@@ -125,6 +130,8 @@ namespace Solicitacao_de_Ferias {
             this.dateDataFinal.Name = "dateDataFinal";
             this.dateDataFinal.Size = new System.Drawing.Size(200, 22);
             this.dateDataFinal.TabIndex = 11;
+            this.dateDataFinal.Value = new System.DateTime(2023, 1, 18, 0, 0, 0, 0);
+            this.dateDataFinal.ValueChanged += new System.EventHandler(this.dateDataFinal_ValueChanged);
             // 
             // Form1
             // 
@@ -159,8 +166,8 @@ namespace Solicitacao_de_Ferias {
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.DateTimePicker dateDataInicial;
         private System.Windows.Forms.DateTimePicker dateDataFinal;
+        private System.Windows.Forms.DateTimePicker dateDataInicial;
     }
 }
 
